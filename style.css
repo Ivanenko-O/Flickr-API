@@ -1,0 +1,35 @@
+body {
+    max-width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+}
+
+#images {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-wrap {
+    position: relative;
+    flex: 0 1 calc(20% - 10px);
+    height: 150px;
+    margin: 5px;
+    background-color: #ccc;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.focus {
+    border: 3px solid rgb(11, 146, 224);
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
