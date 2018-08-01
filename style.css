@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    scroll-behavior: smooth;
 }
 
 .img-wrap {
@@ -19,6 +20,12 @@ body {
     background-color: #ccc;
     overflow: hidden;
     box-sizing: border-box;
+    border: 5px solid #fff;
+    transition: border-color .2s;
+}
+
+.img-wrap:focus {
+    border-color: rgb(11, 146, 224);
 }
 
 .focus {
